@@ -7,4 +7,3 @@ fs.mkdir("mydir",(err)=>{
   }
   console.log("directory created successfully");
 })
-mkdir();
