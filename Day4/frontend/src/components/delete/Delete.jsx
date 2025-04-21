@@ -15,7 +15,7 @@ const Delete = () => {
   const handleView = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:7001/users");
+      const response = await axios.get("https://fsd-backend-edkr.onrender.com/users");
       setUsers(response.data);
       setError(null);
     } catch (err) {

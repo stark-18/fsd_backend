@@ -17,7 +17,7 @@ const Update = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:7001/users");
+        const response = await axios.get("https://fsd-backend-edkr.onrender.com/users");
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);

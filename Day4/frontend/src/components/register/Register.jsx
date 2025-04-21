@@ -36,7 +36,7 @@ const Register = () => {
       setStatus({ message: "", type: "" });
       
       const newUser = { name: formData.name.trim(), age: parseInt(formData.age) };
-      const response = await axios.post('http://localhost:7001/users', newUser);
+      const response = await axios.post('https://fsd-backend-edkr.onrender.com/users', newUser);
       
       setStatus({
         message: "User registered successfully!",
